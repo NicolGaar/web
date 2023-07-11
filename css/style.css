@@ -1,0 +1,35 @@
+.bgimage {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-item {
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .carousel-item.active {
+    display: flex;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .iconStyle {
+    font-size: 70px;
+    text-align: center;
+    width: 50%;
+    }
+
+    
