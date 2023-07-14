@@ -1,0 +1,64 @@
+.ubicacion img{
+    padding-top: 60px;
+    width: 400px;
+    height: 450px;
+}
+.reloj img{
+    height: 35px;
+    width: auto;
+}
+.no-resize {
+    resize: none;
+  }
+.just{
+    margin-left: 30px;
+    display: flex;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.horario{
+    margin-left: 4px;
+    margin-top: 8px;
+    font-size: 20px;
+}
+.atencion{
+    margin-left: 65px;
+}
+.color-titulo h1{
+    color: #51918c;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+.icons {
+    display: flex;
+    margin-left: 120px;
+    font-weight: bold;
+  }
+  
+.icons img {
+    width: 25px;
+    height: 30px;
+    margin-left: 20px;
+    
+  }
+
+
+
+.fondo{
+    background-color: black;
+} 
+
+.btn-n{
+    background: #3fa09b !important;
+    color: #fff !important;
+    }
+
+
+.roboto{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.info{
+    margin-left: 0px;
+}
