@@ -1,48 +1,31 @@
-  /* BANNER *****************************************************************/
-.banner {
-    background-image: url('images/banner.png');
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    text-align: center;
-    margin-bottom: 75px;
-  }
-  
-  .titulo-principal {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 60px;
-    margin-top: 80px;
-    text-align: center;
-    line-height: 200px;
-    
-  }
-  
-  @media (max-width: 768px) {
-    .banner {
-      height: 100px;
-    }
-  
-    .titulo {
-      font-size: 18px;
-      margin-top: 40px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .banner {
-      height: 50px;
-    }
-  
-    .titulo {
-      font-size: 14px;
-      margin-top: 20px;
-    }
-  }
+.nav ul{
+  font-size: 45px;
+  margin-left: 30%;
+  margin-top: 15%;
+  display: flex;
+}
+.container ul{
+display: flex;
+}
 
-  /* BANNER **********************************************************/
+nav ul li {
+margin-left: 40px;
+margin-top: 20px;
 
-  /* GRID CARDS*************************************************************/
+list-style: none;
+}
+nav ul li a {
+text-decoration: none;
+color: #333;
+}
+
+.flex {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+margin-bottom: 30px;
+}
 
   #grid-container {
     display: grid;
@@ -51,57 +34,89 @@
     grid-auto-rows: minmax(100px, auto);
   }
 
-  @media (max-width: 768px) {
-    .grid-container {
-      grid-template-columns: 1fr;
-    }
+  .banner:nth-child(1) {
+    grid-column: 1/5;
   }
-
-  .cards:nth-child(1) {
-    grid-column: 1/2;
-  }
-
+  
   .cards:nth-child(2) {
-    grid-column: 2/3;
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
 
   .cards:nth-child(3) {
-    grid-column: 3/4;
+    grid-column: 2/3;
+    grid-row: 2/3;
   }
 
   .cards:nth-child(4) {
-    grid-column: 1/2;
+    grid-column: 3/4;
     grid-row: 2/3;
   }
 
   .cards:nth-child(5) {
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-column: 1/2;
+    grid-row: 3/4;
   }
 
   .cards:nth-child(6) {
-    grid-column: 3/4;
-    grid-row: 2/3;
+    grid-column: 2/3;
+    grid-row: 3/4;
   }
 
   .cards:nth-child(7) {
-    grid-column: 1/2;
+    grid-column: 3/4;
     grid-row: 3/4;
   }
 
   .cards:nth-child(8) {
-    grid-column: 2/3;
-    grid-row: 3/4;
+    grid-column: 1/2;
+    grid-row: 4/5;
   }
 
   .cards:nth-child(9) {
-    grid-column: 3/4;
-    grid-row: 3/4;
+    grid-column: 2/3;
+    grid-row: 4/5;
   }
 
   .cards:nth-child(10) {
-    grid-column: 1/2;
+    grid-column: 3/4;
     grid-row: 4/5;
+  }
+
+  .cards:nth-child(11) {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  .banner {
+    position: relative;
+    width: 100%;
+    background-size: cover; 
+    background-position: center;
+    text-align: center; 
+    margin-bottom: 10px;
+  }
+  .banner img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .titulo-superpuesto {
+    position: absolute; /* Coloca el título de forma absoluta sobre la imagen */
+    top: 50%; /* Ajusta la posición vertical del título */
+    left: 30%;
+    right: 0;
+    transform: translateY(-50%); /* Centra verticalmente el título */
+    z-index: 1; /* Asegura que el título esté por encima de la imagen */
+  }
+
+  .titulo-principal {
+    font-family: 'Roboto:wght@900', sans-serif;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    line-height: 1;
   }
 
   .cards {
@@ -130,15 +145,15 @@
   }
   
   .cards h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-family: 'Roboto:wght@500', sans-serif;
+    font-size: 20px;
     margin-bottom: 8px;
     text-align: center;
   }
   
   .cards p {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 8px;
     text-align: center;
   }
@@ -147,16 +162,12 @@
   
   .menu-container {
     grid-column: 4/5;
-    grid-row: 1/3; 
+    grid-row: 2/4; 
     margin-top: 50px;
   }
-  /* @media (max-width: 768px) {
-    .menu-container {
-      grid-template-columns: 1fr;
-    }
-} */
-
+ 
   .menu-container button {
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
     text-align: start;
     color: black;
@@ -175,7 +186,8 @@
     transform: translateY(-3%);
   }
   .categorias {
-    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-family: 'Roboto:wght@700', sans-serif;
     color: gray;
     background: #fff;
     border-bottom: 1px solid gray;
@@ -183,18 +195,21 @@
     width: 100%;
   }
 
-  /* GRID BUSCADOR ********************************** */
+
   .buscador {
+    font-size: 16px;
     text-align: center;
     grid-column: 4/5;
-    grid-row: 1/2;
+    grid-row: 2/3;
   }
   
   .buscador form {
+    
     display: inline-block;
   }
   
   .buscador input[type="text"] {
+    font-family: 'Roboto', sans-serif;
     padding: 8px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -202,18 +217,19 @@
   }
   
   .buscador button {
+    font-family: 'Roboto', sans-serif; 
     padding: 8px 16px;
     font-size: 16px;
-    background-color: #04bbbb;
+    background-color: #3fa09b;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
-  /* GRID PAG POR MODIFICAR ********************************** */
+ 
   .pagination {
     grid-column: 2/3;
-    grid-row: 4/5;
+    grid-row: 5/6;
   }
 
   .pagination a {
@@ -227,6 +243,54 @@
   }
   
   .pagination a.active {
-    background-color: #04bbbb;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #3fa09b;
     color: white;
+  }
+   
+  .footer {
+    background-color: #6fbbbd;
+    width: 100%;
+    height: 10%;
+    padding: 20px;
+    color: #51918C;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .ubicacion {
+    width: 50%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
+  
+  .ig {
+    width: 15%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+  
+  .wasap {
+    width: 15%;
+    margin-bottom: 5%;
+  }
+  
+  .mediosdepago {
+    margin-top: 5%;
+    width: 80%;
+    margin-bottom: 5%;
+  }
+  
+  .navegador {
+    text-transform: uppercase;
+    padding-top: 2%;
+  }
+  
+  .logofooter {
+    margin-top: 3%;
+    margin-left: 6%;
+    width: 100%;
   }
