@@ -1,7 +1,28 @@
-$('.carousel').carousel()
-
-$('#carouselExampleControls').carousel({
-    interval: 3000, // Tiempo de transición entre diapositivas en milisegundos (opcional)
-    wrap: true, // Permite el bucle continuo del carrusel (opcional)
-  });
-  
+$('.owl-carousel').owlCarousel({
+	loop: true,
+	center:true,
+	margin: 10,
+	nav: true,
+	navText: [
+	  "<i class='fa fa-caret-left'></i>",
+	  "<i class='fa fa-caret-right'></i>"
+	],
+	autoplay: true,
+	autoplayHoverPause: true,
+	animateOut: 'slideOutDown',
+	animateIn: 'flipInX',
+	responsive: {
+	  0: {
+		items: 1
+	  },
+	  400: {
+		items: 2
+	  },
+	  600: {
+		items: 3
+	  },
+	  1000: {
+		items: 5
+	  }
+	}
+  })

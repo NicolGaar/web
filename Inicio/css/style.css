@@ -1,31 +1,96 @@
-.bgimage {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .carousel-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .carousel-item {
-    position: relative;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  .carousel-item.active {
+/* Header */
+.nav ul{
+  font-size: 45px;
+  margin-left: 30%;
+  margin-top: 15%;
+  display: flex;
+}
+
+.container ul{
     display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+  
+nav ul li {
+margin-left: 40px;
+margin-top: 20px;
+   
+  list-style: none;
+  }
+
+  nav ul li a {
+  text-decoration: none;
+  color: #333;
   }
   
-  .carousel-item img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
+  .flex{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+
+/*Footer*/
+.footer {
+  background-color: #6fbbbd;
+  width: 100%;
+  height: 10%;
+  padding: 20px;
+  color: #51918C;
+  font-family: 'roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.ubicacion {
+  width: 50%;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+
+.ig {
+  width: 15%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.wasap {
+  width: 15%;
+  margin-bottom: 5%;
+}
+
+.mediosdepago {
+  margin-top: 5%;
+  width: 80%;
+  margin-bottom: 5%;
+}
+
+.navegador {
+  text-transform: uppercase;
+  padding-top: 2%;
+}
+
+.logofooter {
+  margin-top: 3%;
+  margin-left: 6%;
+  width: 100%;
+}
+/* banner */
+.carousel-inner {
+  animation-duration: 3s;
+}
+
+
+
+
+  /* otros */
   .iconStyle {
     font-size: 70px;
     text-align: center;
@@ -37,4 +102,80 @@
   color: #fff !important;
   }
 
+
+
+.titulotarjeta {
+text-align: center;
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 20px;
+
+}
+
+.ptarjeta {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 16px;
   
+
+}
+  
+.letra {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 16px;
+
+}
+
+.titulos {
+text-align: center;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 35px;
+text-transform: uppercase;
+color: #3fa09b;
+
+}
+
+/* carrusel */
+.carousel-wrap {
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 80%;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  position: relative;
+  z-index: 100; 
+  
+}
+
+/* end fix */
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color:gray;
+}
+
+.owl-nav i {
+  font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+
+.item{
+  display:flex;
+  align-items:center;
+  height: 180px;
+}
