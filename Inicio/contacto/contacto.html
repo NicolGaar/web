@@ -9,39 +9,73 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBND3ulC1bZ4v_VrN0uREGDbqDpVofvUNk&callback=inicializarMapa" async defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>CONTACTO</title>
 </head>
-
+<header>
+    <div class="container">
+        <div class="flex">
+            <div>
+                <img src="img/logo.png" alt="">
+            </div>
+            <nav>
+                <ul class="zoom-list">
+                    <li onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><a href="#">INICIO</a></li>
+                    <li onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><a href="#">TIENDA</a></li>
+                    <li onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><a href="#">NOSOTROS</a></li>
+                    <li onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><a href="#">EMPRESA</a></li>
+                    <li onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+</header>
+<div class="banner">
+    <img src="img/banner.png" alt="">
+</div>
 <body>
+    
     <div class="container color-titulo">
-        <h1>CONTÁCTANOS</h1>
-         <div class="row">
-            <div class="col-4">
-                
-                <div class="icons">
-                    <img src="img/ubicacion.png" alt="">
+
+        <div class="margen-top">
+        </div>
+        <div class="row margen-top">
+            <div class="col-12 grid">
+                <div class="col-4">
+                    <div class="ubi">
+                        <img src="img/ubicacion.png" alt=""> <br>
+                        <span>UBICACION</span>
+                        <P>Av. Brasil 7948, Renca</P>
+                    </div>
                 </div>
+                <div class="col-4">
+                    <div class="email">
+                        <img src="img/wsp.png" alt=""> <br>
+                        <span>EMAIL</span>
+                        <p>magyprint7@gmail.com</p>
+                    </div>
                 </div>
-            <div class="col-4">
-                <div class="icons">
-                    <img src="img/email.png" alt="">
-                    <p>CORREO</p>
-                </div>
-                </div>
-            <div class="col-4 ">
-                <div class="icons">
-                 <img src="img/wsp.png" alt="">
-                <p>TELÉFONO</p>
+                <div class="col-4">
+                    <div class="fono">
+                        <img src="img/email.png" alt=""> <br>
+                        <span>TELÉFONO</span>
+                        <p>+56 977869076</p>
+                    </div>
                 </div>
             </div>
-            </div>
-        
-        <div class="row">
-            <div class="col-6 roboto">
+
+
+        </div>
+        <div class="row margen-top">
+            <div class="col-12 col-md-6">
                 <h1>CUÉNTANOS TU PROYECTO</h1>
 
                 <form id="projectForm">
@@ -106,19 +140,12 @@
                         <input class="form-control" type="file" id="formFile" accept=".jpg, .png, .gif"
                             title="Selecciona un archivo">
                     </div>
-
-
-
                     <button type="submit" class="btn btn-primary">Más información</button>
-
                 </form>
-
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <div>
-                    <div class="ubicacion">
-                        <img src="img/maps.jpeg" alt="">
-                    </div>
+                    <div id="mapa"></div>
                     <div class="just">
                         <p class="reloj"><img src="img/reloj.png" alt=""></p>
                         <p class="horario">HORARIO DE ATENCIÓN</p>
@@ -132,6 +159,39 @@
             </div>
         </div>
     </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 direccion">
+                    <h5>Ubicación</h5>
+                    <img src="img/ubicacion-01.png" class="ubicacion" alt="">
+                    <p>Lorem ipsum dolor sit ?</p>
+                </div>
+                <div class="col-md-3 contacto">
+                    <h5 class="tamaño">Síguenos</h5>
+                    <img src="img/ig-02.png" class="ig">
+                    <p>magy_print_imprimetuidea</p>
+                    <img src="img/wasap-03.png" class="wasap">
+                    <p>+569 12345678</p>
+                </div>
+                <div class="col-md-3 pago">
+                    <h5>Medios de pago</h5>
+                    <img src="img/logos-transbank-2.png" class="mediosdepago" alt="">
+                </div>
+                <div class="col-md-3 navegador">
+                    <l>
+                        <li type="none">inicio</li>
+                        <li type="none">tienda</li>
+                        <li type="none">nosotros</li>
+                        <li type="none">empresa</li>
+                        <li type="none">contacto</li>
+                        </ul>
+                        <img src="img/LOGO2.png" class="logofooter">
+                </div>
+
+            </div>
+    </footer>
     <script src="script.js"></script>
 
 
